@@ -4,22 +4,21 @@ $("#number-to-guess").text(winningNumber);
 
 var counter = 0;
 
-var numOptions = [9, 3, 6, 12];
+var numOptions = [12, 4, 6, 8];
 
+var anything = [];
 
 
 
 for(var i = 0; i < numOptions.length; i++){
 
-    var numPicks = numOptions[Math.round(Math.random()*numOptions.length)];
-    
     var newElements = $("<img>");
 
     newElements.addClass("go");
 
-    newElements.attr("src", "/Users/dontillery/Bootcamp/Code/Homework/Week 4 Game/images/a" + i + ".jpeg"); 
+    newElements.attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dwayne_Johnson_2%2C_2013.jpg/800px-Dwayne_Johnson_2%2C_2013.jpg"); 
 
-    newElements.attr("data-points", numPicks);
+    newElements.attr("data-points", numOptions[i]);
 
     $("#div1").append(newElements);
 
@@ -38,17 +37,11 @@ $("#div1").on("click", ".go", function(){
     alert("New score: " + counter);
 
     if (counter === winningNumber) {
-        alert("You saved us all");
+        alert("YOU ROCK!");
       }
   
       else if (counter >= winningNumber) {
-        alert("World War 3");
+        alert("Try Again");
       }
   
     });
-
-
-
-
-
-

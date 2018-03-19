@@ -2,7 +2,7 @@
 h1{
     text-align: center;
     
-};
+}
 
 .go{
     height: 225px;
@@ -11,15 +11,16 @@ h1{
     border: solid, black;
     border-width: 3px;
 
-};
-
-.div1{
-    text-align: center;
-
-
-};
+}
 
 body{
 
     background-color: bisque
+}
+
+#subText{
+    font-style: italics;
+    text-align: center;
+    font-size: 12px;
+
 }
