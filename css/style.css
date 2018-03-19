@@ -1,14 +1,25 @@
 
-.go{
+h1{
+    text-align: center;
+    
+};
 
+.go{
     height: 225px;
     width: 225px;
+    margin: 13px;
+    border: solid, black;
+    border-width: 3px;
 
 };
 
-div#div1{
+.div1{
     text-align: center;
 
 
 };
 
+body{
+
+    background-color: bisque
+}

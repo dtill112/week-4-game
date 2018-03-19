@@ -4,7 +4,7 @@ $("#number-to-guess").text(winningNumber);
 
 var counter = 0;
 
-var numOptions = [9, 3, 6, 12];
+var numOptions = [3, 6, 9, 12];
 
 
 
